@@ -1,0 +1,88 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "com.google.gms.google-services" // Firebase configuration
+    id "dev.flutter.flutter-gradle-plugin" // Flutter plugin must come after Android and Kotlin plugins
+}
+
+android {
+    namespace = "com.example.recipe"
+    compileSdkVersion = 35
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.example.recipe"
+        minSdkVersion = 21
+        targetSdk = 35  // Changed from 34
+        versionCode 6
+        versionName "1.0.4"
+    }
+
+    // 🔽 Add this block to enable ABI splits
+    // splits {
+    //     abi {
+    //         enable true
+    //         reset()
+    //         include 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+    //         universalApk false  // Set to true if you want one APK with all ABIs
+    //     }
+    // }
+
+    signingConfigs {
+        // release {
+        //     storeFile file("C:/YELLOWBIRD/TradeCentre/tradecentre/android/app/my-release-key.jks")
+        //     storePassword "123456789"
+        //     keyAlias "my-key-alias"
+        //     keyPassword "123456789"
+        // }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled true // Enable code shrinking
+            shrinkResources true // Enable resource shrinking
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.tools.build:gradle:7.3.0'
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'com.google.firebase:firebase-messaging'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

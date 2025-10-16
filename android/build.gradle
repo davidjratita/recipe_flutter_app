@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Make sure to match the Gradle version (8.3) with the correct AGP (Android Gradle Plugin) version
+        classpath 'com.android.tools.build:gradle:8.1.1' // This version matches Gradle 8.3
+        classpath 'com.google.gms:google-services:4.4.0' // Firebase configuration
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Configure build directories
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+// Task to clean the build directory
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

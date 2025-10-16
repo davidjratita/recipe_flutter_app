@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "1048278967155",
+    "project_id": "butterfly-studios",
+    "storage_bucket": "butterfly-studios.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048278967155:android:d7d093681e471a14919b06",
+        "android_client_info": {
+          "package_name": "com.example.cashbits"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDNMy1kr0pmqh3ori8pjGwldriej8DlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048278967155:android:277fa63c1e4c9b63919b06",
+        "android_client_info": {
+          "package_name": "com.example.kidscoinadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDNMy1kr0pmqh3ori8pjGwldriej8DlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048278967155:android:fdd3dbd6156b59c8919b06",
+        "android_client_info": {
+          "package_name": "com.example.recipe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDNMy1kr0pmqh3ori8pjGwldriej8DlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048278967155:android:e93b39aca552548a919b06",
+        "android_client_info": {
+          "package_name": "com.finance.kidscoin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDNMy1kr0pmqh3ori8pjGwldriej8DlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048278967155:android:52611752831d56eb919b06",
+        "android_client_info": {
+          "package_name": "com.microfinance.investment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDNMy1kr0pmqh3ori8pjGwldriej8DlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
