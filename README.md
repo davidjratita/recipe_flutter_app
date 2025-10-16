@@ -112,7 +112,7 @@ Approximately **3.5 hours**:
 ## **Screenshots**
 
 ![Launch Screen](./assets/screenshots/img1.jpg)
-![Recipe Details Screen](assets/screenshots/img2.jpg)
-![Search Screen](assets/screenshots/img3.jpg)
-![Home Screen](assets/screenshots/img4.jpg)
-![Splash Screen](assets/screenshots/img5.jpg)
+![Recipe Details Screen](./assets/screenshots/img2.jpg)
+![Search Screen](./assets/screenshots/img3.jpg)
+![Home Screen](./assets/screenshots/img4.jpg)
+![Splash Screen](./assets/screenshots/img5.jpg)
