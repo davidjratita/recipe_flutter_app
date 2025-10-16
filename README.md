@@ -99,6 +99,7 @@ flutter run -d chrome
 ## **Architecture Decisions**
 
 * **BLoC** was chosen for clear separation of **UI** and **business logic**.
+In the Recipe App, the BLoC listens for actions like searching or loading recipes, fetches the data through the API, and updates the UI automatically with clean, separated logic.
 
 
 ## **Time Spent**
