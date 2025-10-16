@@ -1,7 +1,5 @@
 # recipe
 
-Fintech For Kids
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -18,7 +16,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Features
 
-* Browse recipes with infinite scroll (pagination) still abit shaky when it reaches the 15th item, I get snaps
+* Browse recipes with infinite scroll (pagination) still abit shaky when it reaches the 15th item, It get snaps
 * Search recipes by name
 * View full recipe details including:
   * Image
@@ -112,7 +110,8 @@ Approximately **3.5 hours**:
 
 ---
 ## **Screenshots**
-![Launch Screen](assets/screenshots/img1.jpg)
+
+![Launch Screen](./assets/screenshots/img1.jpg)
 ![Recipe Details Screen](assets/screenshots/img2.jpg)
 ![Search Screen](assets/screenshots/img3.jpg)
 ![Home Screen](assets/screenshots/img4.jpg)
