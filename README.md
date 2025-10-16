@@ -83,7 +83,7 @@ samples, guidance on mobile development, and a full API reference.
 1. **Clone the repository**:
 
 
-git clone <your-repo-url>
+git clone <https://github.com/davidjratita/recipe_flutter_app>
 cd recipe_browser_app
 ```
 
@@ -105,7 +105,6 @@ flutter run -d chrome
 
 Approximately **3.5 hours**:
 ![Home Screen](assets/screenshots/screenshot.PNG)
-![Time Spent](image.png)
 
 
 ---
